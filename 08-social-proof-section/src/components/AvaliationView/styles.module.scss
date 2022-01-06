@@ -1,0 +1,26 @@
+.avaliationContainer {
+  background: var(--light-grayish-magenta);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 8px 0;
+  max-width: 500px;
+
+  display: grid;
+  grid-template-columns: minmax(100px,150px) 1fr;
+  justify-content: flex-start;
+  align-items: center;
+
+  .stars {
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  .ratedIn {
+
+    p {
+      color: var(--very-dark-magenta);
+      font-weight: 700;
+    }
+  }
+}

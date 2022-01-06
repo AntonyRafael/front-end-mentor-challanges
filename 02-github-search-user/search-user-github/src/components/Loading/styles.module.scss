@@ -1,0 +1,35 @@
+.loaderContainer {
+  display: flex;
+
+  .loader {
+    width: 15px;
+    height: 15px;
+    background: var(--blue-btn);
+    border-radius: 50%;
+    position: relative;
+    margin: 0.5rem;
+
+    &:first-child {
+      animation: .5s upBalls infinite alternate;
+    }
+
+    &:nth-child(2) {
+      animation: .5s upBalls infinite alternate;
+      animation-delay: .2s;
+    }
+
+    &:last-child {
+      animation: .5s upBalls infinite alternate;
+      animation-delay: .4s;
+    }
+  }
+}
+
+@keyframes upBalls {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  from {
+    transform: translate3d(0, -20px, 0);
+  }
+}

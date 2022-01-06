@@ -1,0 +1,103 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card:first-child {
+	background-color: var(--bright-orange);
+  border-radius: 8px 0 0 8px;
+}
+
+.card:nth-child(2) {
+	background-color: var(--dark-cyan);
+}
+
+.card:last-child {
+	background-color: var(--very-dark-cyan);
+  border-radius: 0 8px 8px 0;
+}
+
+.card {
+	padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+	max-width: 350px;
+}
+
+.icon {
+  margin: 1.5rem 0;
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--white-principal);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.content .description {
+  color: var(--white-paragraphs);
+  line-height: 1.4;
+  padding-right: 60px;
+  margin-bottom: 6rem;
+}
+
+.btn {
+  background-color: var(--white-principal);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: currentColor;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.card:first-child .btn {
+  color: var(--bright-orange);
+}
+
+.card:nth-child(2) .btn {
+  color: var(--dark-cyan);
+}
+
+.card:last-child .btn {
+  color: var(--very-dark-cyan);
+}
+
+.card .btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--white-principal);
+  color: var(--white-principal);
+}
+
+@media only screen and (max-width: 700px) {
+	.container {
+		height: 100%;
+	}
+	.cards {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		grid-template-columns: 1fr;
+	}
+	.card:first-child {
+		border-radius: 8px 8px 0 0;
+	}
+	.card:last-child {
+		border-radius: 0 0 8px 8px;
+	}
+}

@@ -1,0 +1,134 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  background: var(--dark-desaturated-blue);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content {
+  padding: 65px;
+  color: var(--white);
+}
+
+.content .title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.content .title .content-contrast {
+  color: var(--soft-violet);
+  opacity: .85;
+}
+
+.description {
+  margin-bottom: 4rem;
+  color: var(--transparent-white);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.info-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.container-info h3 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.container-info span {
+  font-size: 0.75rem;
+  color: var(--transparent-white-headings);
+  text-transform: uppercase;
+}
+
+.image {
+  padding: 0;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+  background: var(--soft-violet);
+  opacity: .3;
+  z-index: 1;
+}
+
+.image img {
+  border-radius: 0 8px 8px 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  filter: var(--soft-violet);
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .container {
+    padding: 70px 20px;
+  }
+  .card  {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+  }
+
+  .content {
+  order: 1;
+  padding: 25px;
+  text-align: center;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+  }
+
+  .info-company {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container-info {
+    margin-bottom: 1rem;
+  }
+
+  .container-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .container-info span {
+    font-size: 0.75rem;
+  }
+  .image {
+    order: 0;
+    height: 250px;
+    width: 100%;
+  }
+
+  .image img {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media only screen and (max-width: 375) {
+
+}

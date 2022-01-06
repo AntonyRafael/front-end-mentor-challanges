@@ -1,0 +1,14 @@
+.button {
+  background: var(--blue-btn);
+  color: var(--white);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: var(--details-blue);
+  }
+}

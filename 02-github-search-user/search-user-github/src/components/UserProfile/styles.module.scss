@@ -1,0 +1,136 @@
+.profileWrapper {
+  max-width: 600px;
+  border-radius: 8px;
+  
+  width: 100%;
+  background: var(--contrast-blue);
+  margin-top: 1rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .userInfos {
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+
+    .userImage {
+      img {
+        border: 3px solid var(--blue-btn);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .userDetails {
+      margin-left: 1rem;
+
+      .username {
+        font-size: 1.5rem;
+      }
+
+      .company {
+        font-size: 0.875rem;
+        margin: 0.5rem 0;
+        color: var(--white-blue);
+      }
+
+      .joined {
+        font-size: 0.875rem;
+        opacity: 0.85;
+      }
+    }
+  }
+
+  .userBio {
+    padding: 0 1.5rem;
+    opacity: 0.85;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .gitStatus {
+    background: var(--main-bg-blue);
+    display: flex;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+
+    .infoStatus {
+      p {
+        opacity: 0.75;
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .socialMedia {
+    padding: 0 1.5rem 1.5rem 0;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+
+    .disable {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+
+    .mediaInfo {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem;
+
+      svg {
+        font-size: 1.5rem;
+      }
+
+      p , a{
+        color: white;
+        margin-top: .3rem;
+        margin-left: .5rem;
+        font-size: .875rem;
+        word-break: break-all;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.notUser {
+  padding: 1.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p , h1{
+    font-weight: 700;
+    opacity: .85;
+    margin-top: .5rem;
+  }
+
+  .error {
+    color: var(--error);
+  }
+}

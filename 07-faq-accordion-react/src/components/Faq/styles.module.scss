@@ -1,0 +1,55 @@
+.faqContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 800px;
+  max-height: 550px;
+  background: white;
+  border-radius: 16px;
+  padding-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+
+  
+  .image {
+    width: 400px; 
+    height: 400px;
+    margin-top: 48px; 
+    overflow: hidden;
+    
+    background: url("../../assets/images/bg-pattern-desktop.svg");
+    background-position: top 25% right 20%;
+    background-size: cover;
+
+    margin-right: 1rem;  
+
+    .womanImage {
+      margin: 0px 0px 0px -100px;
+    } 
+}
+
+  .content {
+    padding-right: 80px;
+    margin-left: .5rem;
+    width: 100%;
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 48px;
+    }
+
+    .accordions {
+      width: 100%;
+      max-width: 380px;
+      margin-top: 36px;
+    }
+
+  }
+}

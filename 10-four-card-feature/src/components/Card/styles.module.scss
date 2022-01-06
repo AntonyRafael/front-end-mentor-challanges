@@ -1,0 +1,43 @@
+.cardContainer {
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  .content {
+
+    h1 {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: var(--very-dark-blue);
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--grayish-blue);
+      margin-bottom: 2rem;
+    }
+  }
+
+  .image {
+    align-self: end;
+
+    img {
+      width: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image {
+
+    img {
+      width: 30px;
+    }
+  }
+}

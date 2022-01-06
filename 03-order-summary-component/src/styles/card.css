@@ -1,0 +1,118 @@
+.cardContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background:white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.image img{
+  border-radius: 14px 14px 0 0;
+  width: 100%;
+  max-height: 200px;
+  display: block;
+}
+
+.content {
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.description {
+  max-width: 400px;
+  color: var(--desaturated-blue);
+  margin-bottom: 24px;
+}
+
+.plan-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: var(--very-pale-blue);
+  padding: 10px 15px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.plan-description {
+  margin-left: 1rem;
+}
+.plan-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.plan-price {
+  margin-top: 16px;
+  color: var(--desaturated-blue);
+}
+
+.change-plan {
+  font-size: 0.875rem;
+  color: var(--bright-blue);
+}
+
+.change-plan:hover {
+  text-decoration: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin:  36px auto;
+}
+
+.payment-confirm {
+  background: var(--bright-blue);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s all;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+.payment-confirm:hover {
+  background: var(--dark-blue);
+}
+
+.cancel-order {
+  margin-top: 1rem;
+  font-size: .875rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.cancel-order:hover {
+  text-decoration: underline;
+}

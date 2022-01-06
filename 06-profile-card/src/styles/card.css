@@ -1,0 +1,115 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  position: relative;
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.bg {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  top: 0;
+  right: 0;
+  background: url("../assets/bg-pattern-card.svg") no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image img {
+  width: 120px;
+  border-radius: 50%;
+  z-index: 3;
+  border: 6px solid white;
+}
+
+.user-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.name {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.age {
+  color: var(--dark-gray);
+}
+
+.city {
+  text-align: center;
+  color: var(--dark-gray);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.city::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--dark-grayish-blue);
+  opacity: .3;
+  margin: 1rem auto;
+}
+
+.info-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.info-container .info {
+  font-weight: 700;
+}
+.info-container .description {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+  text-transform: capitalize;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  .profile-card {
+    position: relative;
+    padding: 15px;
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,90 @@
+.accordionContainer {
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+
+  .titleInfo {
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: var(--dark-grayish-blue);
+      opacity: 0.5;
+    }
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover h1 {
+      color: var(--soft-red);
+    }
+
+    h1 {
+      font-size: 0.875rem;
+      padding: 10px;
+      margin-right: 1rem;
+      transition: all 0.3s;
+      color: var(--very-dark-grayish-blue);
+
+      &.titleActive {
+        color: var(--very-dark-desaturated-blue);
+        font-weight: 700;
+      }
+    }
+
+    img {
+      width: 0.875rem;
+      display: block;
+      transition: all 0.3s;
+
+      &.closeIcon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .showContent {
+    display: block;
+    transition: all 0.3s;
+    animation: showDescription 0.3s;
+
+    p {
+      padding: 10px;
+      color: var(--dark-grayish-blue);
+      font-size: 0.875rem;
+    }
+  }
+
+  .closeContent {
+    transition: all 0.3s;
+    animation: hideDescription 0.3s forwards;
+  }
+}
+
+@keyframes showDescription {
+  to {
+    transform: translate3d(0, 0px, 0);
+  }
+  from {
+    transform: translate3d(0, -30px, 0);
+  }
+}
+
+@keyframes hideDescription {
+  to {
+    transform: translate3d(0, -30px, 0);
+    opacity: 0;
+    display: none;
+  }
+  from {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}

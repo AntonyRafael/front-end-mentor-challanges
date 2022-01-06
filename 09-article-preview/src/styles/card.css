@@ -1,0 +1,242 @@
+.card {
+  display: grid;
+  grid-template-columns: max(250px) 1fr;
+  max-width: 650px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: block;
+  border-radius: 16px 0 0 16px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.title {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--desaturated-dark-blue);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.user-share-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--grayish-blue);
+}
+
+.user-info {
+  margin-left: 1rem;
+}
+
+.user-info .name {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem;
+}
+
+.user-info .date {
+  color: var(--grayish-blue);
+}
+
+/*!  a */
+
+.share {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.share:hover {
+  background-color: var(--grayish-blue);
+}
+
+.share:hover .social-media-container {
+  animation: .5s showShare forwards;
+}
+
+.share img {
+  width: 18px;
+  height: 15px;
+}
+
+.social-media-container {
+  background-color: var(--very-dark-grayish-blue);
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  top: -50px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 0;
+}
+
+.social-media-container::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height:0px;
+  position: absolute;
+  left: calc(50% - 12px);
+  bottom: -10px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--very-dark-grayish-blue);
+
+}
+
+.social-media {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.social-media .share-text {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.social-media img {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes showShare {
+  to {
+    transform: translate3d(0, 0px,0);
+    opacity: 1;
+  } from {
+    opacity: 0;
+    transform: translate3d(0, 30px,0);
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    width: 320px;
+  }
+  
+  .image img {
+    height: 180px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .share {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    width: 40px;
+    height: 40px;
+    left: calc(100% - 40px);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  
+  .share:hover .social-media-container {
+    animation: .5s showShare forwards;
+  }
+  
+  .share img {
+    width: 18px;
+    height: 15px;
+  }
+  
+  .social-media-container {
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    opacity: 0;
+    width: 320px;
+    height: 70px;
+    border-radius: 0 0 8px 8px;
+    right: -75%;
+    top: 150%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .social-media-container::after {
+    display: none;
+  }
+  
+  
+  .social-media {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .social-media .share-text {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .social-media img {
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .social-media-container {
+    width: 280px;
+  }
+}
