@@ -1,0 +1,115 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .content {
+    margin-left: calc(15%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: calc(5%);
+
+    .mainContent {
+      margin-top: calc(10%);
+
+      h1 {
+        font-size: 54px;
+        max-width: 500px;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+
+        span {
+          color: var(--desaturated-red);
+        }
+      }
+
+      p {
+        font-size: 1.225rem;
+        max-width: 340px;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        color: var(--desaturated-red);
+      }
+    }
+  }
+
+  .background {
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/hero-desktop.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .app {
+    height: 100%;
+    overflow:inherit;
+    position: relative;
+    grid-template-columns: 1fr;
+    justify-content: start;
+    align-items: flex-start;
+
+  }
+  .content {
+    position: relative;
+    margin: 0 !important;
+    height: 100vh;
+    width: 100vw;
+
+
+    .logo {
+      margin: 2rem 0;
+      margin-left: 2rem;
+    }
+
+    .bgMobile {
+      width: 100vw;
+      height: 250px;
+      background-image: url("./assets/images/hero-mobile.jpg");
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .mainContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+      h1 {
+        margin-top: 1rem;
+        font-size: 48px !important;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1rem !important;
+        line-height: 1.4;
+      }
+
+    }
+
+  }
+
+  .background {
+    display: none;
+  }
+}

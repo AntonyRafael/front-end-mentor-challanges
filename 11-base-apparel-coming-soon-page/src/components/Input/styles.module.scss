@@ -1,0 +1,87 @@
+.label {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 25px;
+  padding: 20px 15px;
+  padding-right: 50px;
+  border: 1px solid var(--details-pink);
+  border-radius: 16px;
+  font-size: 0.875rem;
+  outline: none;
+
+  &::placeholder {
+    color: var(--details-pink);
+    font-weight: 300;
+  }
+
+  &.labelError {
+    border: 2px solid var(--soft-red);
+    color: var(--soft-red);
+  }
+}
+
+.button {
+  position: absolute;
+
+  background-color: rgb(248, 191, 191);
+  background: linear-gradient(
+    135deg,
+    rgba(248, 191, 191, 1) 0%,
+    rgba(238, 140, 140, 1) 70%
+  );
+  background-repeat: no-repeat;
+  background-position: left top;
+  color: white;
+
+  margin-left: -70px;
+  height: 42px;
+  width: 75px;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+
+  transition: all 0.4s;
+
+  img {
+    display: block;
+    width: 12px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: rgb(248, 191, 191);
+    background: linear-gradient(
+      135deg,
+      rgb(248, 191, 191) 0%,
+      rgb(248, 191, 191) 50%
+    );
+
+    transform: scale(1.2);
+  }
+
+  &.buttonError {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width:25px;
+      height:25px;
+      top: 0;
+      left: -40%;
+      background: url("../../assets/images/icon-error.svg") no-repeat center center;
+      margin: 8px auto;
+      transform: scale(.8);
+    }
+  }
+}
+
+.buttonInside {
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: var(--soft-red) !important;
+}
