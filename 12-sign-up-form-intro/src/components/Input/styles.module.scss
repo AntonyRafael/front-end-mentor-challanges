@@ -22,10 +22,13 @@
 
     &.inputError {
       border: 1px solid var(--red);
+      color: var(--red);
+      color: var(--red);
+      opacity: 0.85;
 
       &::placeholder {
         color: var(--red);
-        opacity: .85;
+        opacity: 0.85;
       }
     }
   }
@@ -39,8 +42,8 @@
 }
 
 .error {
-  margin-top: .5rem;
-  font-size: .685rem;
+  margin-top: 0.5rem;
+  font-size: 0.685rem;
   color: var(--red);
   text-align: right;
   font-style: italic;
