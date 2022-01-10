@@ -1,0 +1,47 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+
+  .input {
+    width: 100%;
+    border: 1px solid var(--grayish-blue);
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: var(--dark-blue);
+    position: relative;
+
+    &::placeholder {
+      color: var(--grayish-blue);
+      font-weight: 700;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--dark-blue);
+    }
+
+    &.inputError {
+      border: 1px solid var(--red);
+
+      &::placeholder {
+        color: var(--red);
+        opacity: .85;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 20px;
+    top: 25%;
+    right: 5%;
+  }
+}
+
+.error {
+  margin-top: .5rem;
+  font-size: .685rem;
+  color: var(--red);
+  text-align: right;
+  font-style: italic;
+}

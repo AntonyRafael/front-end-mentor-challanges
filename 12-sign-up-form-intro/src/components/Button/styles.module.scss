@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  padding: 15px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s;
+  font-size: 1rem;
+
+  
+  .bold {
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .text {
+    font-weight: 400;
+    opacity: .9;
+  }
+
+
+  &:hover {
+    filter: brightness(1.1) saturate(1.1);
+  }
+}
+
+
