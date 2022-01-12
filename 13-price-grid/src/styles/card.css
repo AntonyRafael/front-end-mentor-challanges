@@ -1,0 +1,169 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.details {
+  padding: 20px 30px;
+  margin-top: 1rem;
+}
+
+.details h1 {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.details .call {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.details p:last-child {
+  color: var(--grayish-blue);
+  padding-right: 10px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.price-plan-container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.price {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan);
+  border-radius: 0 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price .subscription {
+  font-size: 20px;
+}
+
+.price .subscription-price {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.price .subscription-price span {
+  position: absolute;
+  top: 20%;
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-left: 0.5rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.price .subscription-details {
+  opacity: 0.9;
+}
+
+.btn {
+  color: white;
+  border: none;
+  background: var(--bright-yellow);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(0.95) contrast(0.9);
+}
+
+.plan-details {
+  padding: 20px;
+  padding-left: 35px;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan-white);
+  border-radius: 0 0 8px 0;
+}
+
+.plan-details h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.plan-details ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--light-gray);
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .details {
+    padding: 10px 15px;
+    margin-top: 1rem;
+  }
+
+  .details h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .details .call {
+    font-size: 0.875rem;
+  }
+
+  .details p:last-child {
+    font-size: 0.775rem;
+    padding-right: 0;
+  }
+
+  .price-plan-container {
+    grid-template-columns: 1fr;
+  }
+
+  .price {
+    padding: 30px 15px;
+    border-radius: 0;
+  }
+
+  .price .subscription {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .plan-details {
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+}
