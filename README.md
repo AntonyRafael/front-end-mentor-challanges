@@ -121,3 +121,13 @@ Only HTML and CSS.
   <img src="./00-results/day-13/desktop.png" alt="day 13 desktop" style="margin: 1rem; height: 400px; background-size: cover;">
   <img src="./00-results/day-13/mobile.png" alt="day 13 desktop" style="width: 300px; background-size: cover;">
 </div>
+
+## Day 14
+
+React, TypeScript, SASS.
+
+<div style="display: flex; justify-content: center; width: 800px; ">
+  <img src="./00-results/day-14/desktop.png" alt="day 14 desktop" style="margin: 1rem; height: 400px; background-size: cover;">
+  <img src="./00-results/day-14/desktop-error.png" alt="day 14 desktop error" style="margin: 1rem; height: 400px; background-size: cover;">
+  <img src="./00-results/day-14/mobile.png" alt="day 14 desktop" style="width: 300px; background-size: cover;">
+</div>
