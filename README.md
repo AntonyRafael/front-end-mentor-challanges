@@ -131,3 +131,12 @@ React, TypeScript, SASS.
   <img src="./00-results/day-14/desktop-error.png" alt="day 14 desktop error" style="margin: 1rem; height: 400px; background-size: cover;">
   <img src="./00-results/day-14/mobile.png" alt="day 14 desktop" style="width: 300px; background-size: cover;">
 </div>
+
+## Day 15
+
+Only HTML and CSS.
+
+<div style="display: flex; justify-content: center; width: 800px; ">
+  <img src="./00-results/day-15/desktop.png" alt="day 15 desktop" style="margin: 1rem; height: 400px; background-size: cover;">
+  <img src="./00-results/day-15/mobile.png" alt="day 15 desktop" style="width: 300px; background-size: cover;">
+</div>
